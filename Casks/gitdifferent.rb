@@ -8,15 +8,15 @@ cask "gitdifferent" do
   homepage "https://vheissulabs.com/projects/gitdifferent"
 
   livecheck do
-    url "https://github.com/VheissuLabs/GitDifferent-releases/releases/latest/download/latest.json"
-    regex(/"version"\s*:\s*"(\d+(?:\.\d+)+)"/i)
+    url :url
+    strategy :github_latest
   end
 
   # The app updates itself: it checks on launch, downloads, verifies a signature and restarts. So
   # `brew upgrade` leaves it alone rather than reinstalling over a copy that is already newer.
   auto_updates true
   depends_on arch: :arm64
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "GitDifferent.app"
 
