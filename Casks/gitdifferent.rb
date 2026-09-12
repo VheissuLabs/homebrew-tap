@@ -2,13 +2,13 @@ cask "gitdifferent" do
   version "2.0.6"
   sha256 "92aebb638188e46153259ca39f5752681e3ac369822ab4ec82c489fd6cfecb64"
 
-  url "https://github.com/VheissuLabs/GitDifferent-releases/releases/download/v#{version}/GitDifferent_#{version}_aarch64.dmg"
+  url "https://vheissulabs.com/download/GitDifferent_#{version}_aarch64.dmg"
   name "GitDifferent"
   desc "Git client built around a three-way merge tool"
   homepage "https://vheissulabs.com/projects/gitdifferent"
 
   livecheck do
-    url :url
+    url "https://github.com/VheissuLabs/GitDifferent-releases/releases/latest"
     strategy :github_latest
   end
 
@@ -26,9 +26,7 @@ cask "gitdifferent" do
   zap trash: [
     "~/Library/Application Support/com.vheissulabs.gitdifferent",
     "~/Library/Caches/com.vheissulabs.gitdifferent",
-    "~/Library/HTTPStorages/com.vheissulabs.gitdifferent",
     "~/Library/Preferences/com.vheissulabs.gitdifferent.plist",
-    "~/Library/Saved Application State/com.vheissulabs.gitdifferent.savedState",
     "~/Library/WebKit/com.vheissulabs.gitdifferent",
   ]
 end
