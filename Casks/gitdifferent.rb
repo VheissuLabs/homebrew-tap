@@ -1,6 +1,6 @@
 cask "gitdifferent" do
-  version "2.0.7"
-  sha256 "491e77713ac87a30ce8c1968d19fb9acd798b856e42cc0d97eb6b811ff5af921"
+  version "2.0.8"
+  sha256 "cf6b05d0c4b688afead48f421cf469dd54aee58ee96d8ceb68158d11a23cc250"
 
   url "https://vheissulabs.com/download/GitDifferent_#{version}_aarch64.dmg"
   name "GitDifferent"
