@@ -4,24 +4,22 @@ class Tql < Formula
   license "MIT"
 
   on_macos do
+    depends_on arch: :arm64
+
     on_arm do
-      url "https://github.com/VheissuLabs/tql/releases/download/v0.4.2/tql-macos-aarch64"
-      sha256 "418b8061a1efa00247dff23dc505d2e27d5b5707a1dd2ee4a8dd7cd1765d978e"
-    end
-    on_intel do
-      url "https://github.com/VheissuLabs/tql/releases/download/v0.4.2/tql-macos-x86_64"
-      sha256 "aef853843716e24ec20313a115feb566b29856095e7ebc4b2de92c5e92d86420"
+      url "https://github.com/VheissuLabs/tql/releases/download/v0.4.4/tql-macos-aarch64"
+      sha256 "9f48faa166a28075f5d787466d037803cf8a61a817eca5eb110c8447f8b629d3"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/VheissuLabs/tql/releases/download/v0.4.2/tql-linux-aarch64"
-      sha256 "975d9b90b3e3efd1f39c62e6d827ce813ca48a8b23aa3b86e7b254b6eae582d6"
+      url "https://github.com/VheissuLabs/tql/releases/download/v0.4.4/tql-linux-aarch64"
+      sha256 "352ca9e0f8384317673ec03a44cad88dcbf809a9b1981c0b95fbce2c9e689e6c"
     end
     on_intel do
-      url "https://github.com/VheissuLabs/tql/releases/download/v0.4.2/tql-linux-x86_64"
-      sha256 "2672745af9d7368225169f17b9dd51b5f04bd3c9648f021dff627cb073c95b4a"
+      url "https://github.com/VheissuLabs/tql/releases/download/v0.4.4/tql-linux-x86_64"
+      sha256 "76bd9b06a96f147e487a10e1ff74d55ce937a6aade525c55c09dbbfe837cd313"
     end
   end
 
