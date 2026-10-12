@@ -7,19 +7,19 @@ class Tql < Formula
     depends_on arch: :arm64
 
     on_arm do
-      url "https://github.com/VheissuLabs/tql/releases/download/v0.13.0/tql-macos-aarch64"
-      sha256 "b036b909ed0eb3075ed7dbcba67b71271e084c1aacceb7931a71d5ef99171a64"
+      url "https://github.com/VheissuLabs/tql/releases/download/v0.13.1/tql-macos-aarch64"
+      sha256 "98a99048fbd730ae6285f18a07d25e8faa1b60a41ace797bb7363c193039c7b3"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/VheissuLabs/tql/releases/download/v0.13.0/tql-linux-aarch64"
-      sha256 "99c6b171b44113c94f00f4e41706e4ee4cc50cfc8b072466a5f4f4b477d02d8c"
+      url "https://github.com/VheissuLabs/tql/releases/download/v0.13.1/tql-linux-aarch64"
+      sha256 "a2ac510f230325a0a3d82a7aef09cbe42e3f1def69209d99d352754d5d182966"
     end
     on_intel do
-      url "https://github.com/VheissuLabs/tql/releases/download/v0.13.0/tql-linux-x86_64"
-      sha256 "f2a62693d8c9f48d3153d1c63a6fea5296d5bbf6865f81263d0a75d2d73200fe"
+      url "https://github.com/VheissuLabs/tql/releases/download/v0.13.1/tql-linux-x86_64"
+      sha256 "c52ada6cd62e80d3b8babf040276f4cfd19ad4a88421b6fb394d25732f23e299"
     end
   end
 
